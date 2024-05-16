@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  background-color: $color-black-bean;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px 10px 5px 14px;
+  }
+
+  &__toggle {
+    background-color: transparent;
+    align-self: center;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__logo {
+    margin: 0 0 0 51px;
+  }
+}

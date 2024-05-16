@@ -1,12 +1,18 @@
 .btn {
+  color: $color-default-white;
+  background-color: $color-alizarin;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 36px;
+  cursor: pointer;
+  user-select: none;
 
   &:disabled {
-    opacity: 0.5;
-
     pointer-events: none;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-carmine;
   }
 }

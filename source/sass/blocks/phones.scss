@@ -1,0 +1,17 @@
+.phones {
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 15px;
+  }
+}

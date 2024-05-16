@@ -14,46 +14,54 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" data-header="sticky" data-fix-block="data-fix-block">
         <div class="container">
-          <span class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 992px)" srcset="img/svg/logo-desktop.svg">
-              <source media="(max-width: 991px)" srcset="img/svg/logo-mobile.svg">
-              <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="59" height="30" alt="Логотип сайта.">
-            </picture>
-          </span>
-          <ul class="header__phones phones">
-            <li class="phones__item">
-              <span class="phones__title">Санкт-Петербург:</span>
-              <a class="phones__link" href="tel:+78126037222">8 (812) 603-72-22</a>
-            </li>
-            <li class="phones__item">
-              <span class="phones__title">Москва:</span>
-              <a class="phones__link" href="tel:+74993807733">8 (499) 380-77-33</a>
-            </li>
-          </ul>
-          <button class="header__toggle toggle" type="button" aria-label="Отображение мобильного меню.">
-            <svg class="toggle__opened" width="21" height="14" aria-hidden="true" focusable="false">
-              <use href="img/sprite.svg#icon-open"></use>
-            </svg>
-            <svg class="toggle__closed" width="52" height="52" aria-hidden="true" focusable="false">
-              <use href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Дома</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Бани</a>
-              </li>
-            </ul>
-          </nav>
+            <button class="header__toggle toggle" type="button" aria-label="Отображение мобильного меню.">
+              <svg class="toggle__opened" width="21" height="14" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#icon-open"></use>
+              </svg>
+              <svg class="toggle__closed" width="52" height="52" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#home"></use>
+                  </svg>
+                  <a class="nav__link" href="#">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#villa"></use>
+                  </svg>
+                  <a class="nav__link" href="#">Дома</a>
+                </li>
+                <li class="nav__item">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#projects"></use>
+                  </svg>
+                  <a class="nav__link" href="#">Бани</a>
+                </li>
+              </ul>
+            </nav>
+            <span class="header__logo" href="index.html">
+              <picture>
+                <source media="(max-width: 991px)" srcset="img/svg/logo-mobile.svg">
+                <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="59" height="30" alt="Логотип сайта.">
+              </picture>
+            </span>
+            <div class="header__phones phones">
+              <div class="phones__item">
+                <span class="phones__title">Санкт-Петербург:</span>
+                <a class="phones__link" href="tel:+78126037222">8 (812) 603-72-22</a>
+              </div>
+              <div class="phones__item">
+                <span class="phones__title">Москва:</span>
+                <a class="phones__link" href="tel:+74993807733">8 (499) 380-77-33</a>
+              </div>
+            </div>
         </div>
       </header>
       <main>

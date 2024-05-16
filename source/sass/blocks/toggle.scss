@@ -1,0 +1,22 @@
+.toggle {
+  width: 30px;
+  padding: 4px 0 0;
+
+  &.is-opened {
+    padding: 0;
+  }
+}
+
+.toggle .toggle__closed {
+  display: none;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: block;
+  width: 30px;
+  height: 30px;
+}

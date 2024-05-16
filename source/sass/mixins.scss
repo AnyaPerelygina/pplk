@@ -44,8 +44,8 @@
   }
 }
 
-@mixin vp-991 {
-  @media (min-width: $vp-991) {
+@mixin vp-992 {
+  @media (min-width: $vp-992) {
     @content;
   }
 }
