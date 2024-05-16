@@ -14,49 +14,349 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <span class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/svg/logo-desktop.svg">
+              <source media="(max-width: 991px)" srcset="img/svg/logo-mobile.svg">
+              <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="59" height="30" alt="Логотип сайта.">
+            </picture>
+          </span>
+          <ul class="header__phones phones">
+            <li class="phones__item">
+              <span class="phones__title">Санкт-Петербург:</span>
+              <a class="phones__link" href="tel:+78126037222">8 (812) 603-72-22</a>
+            </li>
+            <li class="phones__item">
+              <span class="phones__title">Москва:</span>
+              <a class="phones__link" href="tel:+74993807733">8 (499) 380-77-33</a>
+            </li>
+          </ul>
+          <button class="header__toggle toggle" type="button" aria-label="Отображение мобильного меню.">
+            <svg class="toggle__opened" width="21" height="14" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#icon-open"></use>
+            </svg>
+            <svg class="toggle__closed" width="52" height="52" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Дома</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Бани</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="hero">
           <div class="container">
-            <h1>Пестовский Лесокомбинат</h1>
+            <div class="hero__img">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/hero-background.webp">
+                <img src="img/hero-background.webp" width="1440" height="960" alt="Фоновое изображение сайта.">
+              </picture>
+            </div>
+            <div class="hero__text">
+              <h1>Пестовский Лесокомбинат</h1>
+              <p>Cтань частью нашей команды!</p>
+              <button class="btn hero__button" type="button">Отправить анкету</button>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <h2 class="about__title title">O компании</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <span>2</span>
+              <p>Города присутствия: Санкт-Петербург и&nbsp;Москва</p>
+            </li>
+            <li class="about__item">
+              <span>>30</span>
+              <p>Лет среди лидеров рынка</p>
+            </li>
+            <li class="about__item">
+              <span>100</span>
+              <p>Домов и&nbsp;бань сдаём ежегодно</p>
+            </li>
+          </ul>
+        </section>
+        <section class="vacancies">
+          <h2 class="vacancies__title title">Выбери подразделение:</h2>
+          <div class="vacancies__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+            <div class="vacancies__nav tabs__controls" data-tabs="controls">
+              <button class="vacancies__button tabs__control is-active" data-tabs="control">Строительный отдел</button>
+              <button class="vacancies__button tabs__control" data-tabs="control">Офис</button>
+              <button class="vacancies__button tabs__control" data-tabs="control">Финансовый отдел</button>
+              <button class="vacancies__button tabs__control" data-tabs="control">Отдел продаж</button>
+              <button class="vacancies__button tabs__control" data-tabs="control">Внештатный сотрудник</button>
+            </div>
+            <div class="vacancies__content tabs__content" data-tabs="content">
+              <ul class="vacancies__list tabs__element" data-tabs="element" data-accordion="parent">
+                <li lass="vacancies__item" data-accordion="element">
+                  <div class="vacancies__content" data-accordion="button">
+                    <div class="vacancies__vacancy vacancy">
+                      <div class="vacancy__title"></div>
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#user"></use>
+                        </svg>
+                        <h3>Прораб</h3>
+                      <div class="vacancy__salary"></div>
+                        <svg width="13" height="14" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#ruble"></use>
+                        </svg>
+                        <span>от 00 000 руб</span>
+                      <button class="vacancies__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+                    </div>
+                    <div class="vacancies__details" data-accordion="content">
+                      <h4>Задачи:</h4>
+                      <ul>
+                        <li>описание</li>
+                        <li>описание</li>
+                        <li>описание</li>
+                      </ul>
+                      <h4>Наши ожидания:</h4>
+                      <ul>
+                        <li>описание</li>
+                        <li>описание</li>
+                        <li>описание</li>
+                      </ul>
+                      <h4>Мы предлагаем:</h4>
+                      <ul>
+                        <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
+                        <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
+                        <li>ежеквартальную премию по&nbsp;итогам работы;</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn hero__button" type="button">Отправить анкету</button>
+        </section>
+        <section class="advantages">
+          <h2 class="advantages__title title">Преимущества компании</h2>
+          <ul class="advantages__list" data-accordion="parent">
+            <li lass="advantages__item" data-accordion="element">
+              <div class="advantages__content" data-accordion="button">
+                <h3 class="advantages__subTitle">Качество продукта</h3>
+                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+              </div>
+              <div class="advantages__details" data-accordion="content">
+                <p>Мы&nbsp;гордимся результатами своей работы! Мы&nbsp;убеждены, что&nbsp;именно качество&nbsp;— это&nbsp;самое главное, это&nbsp;то, что&nbsp;даёт Нам уверенность в&nbsp;завтрашнем дне.</p>
+              </div>
+            </li>
+            <li lass="advantages__item" data-accordion="element">
+              <div class="advantages__content" data-accordion="button">
+                <h3 class="advantages__subTitle">Популярность бренда в&nbsp;сети</h3>
+                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+              </div>
+              <div class="advantages__details" data-accordion="content">
+                <p>Мы&nbsp;занимаем высокие позиции в&nbsp;поисковой выдаче и&nbsp;имеем многочисленные отзывы, привлекающие новых заказчиков независимо от&nbsp;времени года.</p>
+              </div>
+            </li>
+            <li lass="advantages__item" data-accordion="element">
+              <div class="advantages__content" data-accordion="button">
+                <h3 class="advantages__subTitle">Передовое рабочее место</h3>
+                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+              </div>
+              <div class="advantages__details" data-accordion="content">
+                <p>Комфортный офис в&nbsp;центре г.&nbsp;Санкт-Петербург, оборудованный передовыми технологиями. Твой&nbsp;рабочий компьютер может быть даже&nbsp;в&nbsp;твоём смартфоне!</p>
+              </div>
+            </li>
+            <li lass="advantages__item" data-accordion="element">
+              <div class="advantages__content" data-accordion="button">
+                <h3 class="advantages__subTitle">Свои&nbsp;автоматизированные системы обучения</h3>
+                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+              </div>
+              <div class="advantages__details" data-accordion="content">
+                <p>Создали и&nbsp;постоянно улучшаем собственные автоматизированные системы обучения специалистов и&nbsp;повышения их&nbsp;квалификации внутри компании.</p>
+              </div>
+            </li>
+            <li lass="advantages__item" data-accordion="element">
+              <div class="advantages__content" data-accordion="button">
+                <h3 class="advantages__subTitle">Сотрудничество с&nbsp;ведущими Компаниями рынка</h3>
+                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+              </div>
+              <div class="advantages__details" data-accordion="content">
+                <p>Сотрудничаем с&nbsp;ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна Петербурга», «КраскиДоски», «Technonicol» и&nbsp;другими.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="products">
+          <h2 class="products__title">Продукты компании</h2>
+          <div class="products__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+            <div class="products__nav tabs__controls" data-tabs="controls">
+              <button class="products__button tabs__control is-active" data-tabs="control">Бани</button>
+              <button class="products__button tabs__control" data-tabs="control">Дома</button>
+            </div>
+            <div class="products__content tabs__content" data-tabs="content">
+              <div class="products__list tabs__element swiper" data-tabs="element">
+                <div class="products__wrapper swiper-wrapper">
+                  <div class="products__slide swiper-slide"></div>
+                  <div class="products__slide swiper-slide"></div>
+                  <div class="products__slide swiper-slide"></div>
+                </div>
+              </div>
+              <div class="products__list tabs__element swiper" data-tabs="element">
+                <div class="products__wrapper swiper-wrapper">
+                  <div class="products__slide swiper-slide"></div>
+                  <div class="products__slide swiper-slide"></div>
+                  <div class="products__slide swiper-slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="employees">
+          <h2 class="employees__title title">Карьерный рост</h2>
+          <p>Наша&nbsp;Компания является ярким примером, где&nbsp;достойные люди смело и&nbsp;заслуженно поднимаются по&nbsp;карьерной лестнице.</p>
+          <p>Мы&nbsp;ценим стремление к&nbsp;развитию и&nbsp;предоставляем все&nbsp;необходимые для&nbsp;этого условия.</p>
+          <div class="employees__employees swiper">
+            <div class="employees__slide swiper-slide">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/employees/Oleg.webp">
+                <img src="img/employees/Oleg.webp" width="238" height="240" alt="Изображение сотрудника компании.">
+              </picture>
+              <div class="employees__text">
+                <h3>Олег Воробьёв</h3>
+                <span>Прораб</span>
+                <ul class="employees__list">
+                  <li>В&nbsp;Компании с&nbsp;2018&nbsp;года. Начал с&nbsp;позиции плотника в&nbsp;строительной бригаде.</li>
+                  <li>В&nbsp;течение года работы Олег стал бригадиром и&nbsp;был приглашён в&nbsp;офис Компании на&nbsp;должность штатного Производителя строительных работ.</li>
+                  <li>На&nbsp;данный момент в&nbsp;Его&nbsp;подчинении находятся 9&nbsp;строительных бригад. Олег вносит весомый вклад в&nbsp;итоговый результат Компании, а&nbsp;это реализация 100 объектов в&nbsp;год!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="employees__slide swiper-slide">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/employees/Maria.webp">
+                <img src="img/employees/Maria.webp" width="216" height="240" alt="Изображение сотрудника компании.">
+              </picture>
+              <div class="employees__text">
+                <h3>Мария Обухова</h3>
+                <span>Руководитель финансовой службы</span>
+                <ul class="employees__list">
+                  <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
+                  <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
+                  <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="employees__slide swiper-slide">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/employees/Danil.webp">
+                <img src="img/employees/Danil.webp" width="204" height="240" alt="Изображение сотрудника компании.">
+              </picture>
+              <div class="employees__text">
+                <h3>Даниил Басенков</h3>
+                <span>Менеджер по снабжению</span>
+                <ul class="employees__list">
+                  <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
+                  <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
+                  <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <picture>
+            <source media="(min-width: 320px)" srcset="img/people.webp">
+            <img src="img/people.webp" width="427" height="386" alt="Изображение нарисованных людей.">
+          </picture>
+          <div class="promo__text">
+            <p>Наши успехи&nbsp;—&nbsp;это&nbsp;заслуга замечательных людей, работающих в&nbsp;нашей Команде.</p>
+            <p>У&nbsp;Нас&nbsp;всегда есть вакансии для&nbsp;сильных кандидатов</p>
+          </div>
+          <div class="promo__text">
+            <p>Если чувствуешь в&nbsp;Себе потенциал и&nbsp;здоровые амбиции&nbsp;—&nbsp;ждём рядом с&nbsp;Нами!</p>
+            <button class="btn promo__button" type="button">Присоединиться к&nbsp;команде</button>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">Контакты</h2>
+          <div class="contacts contacts__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+            <div class="contacts__nav tabs__controls" data-tabs="controls">
+              <button class="contacts__button tabs__control is-active" data-tabs="control">Санкт-Петербург</button>
+              <button class="contacts__button tabs__control" data-tabs="control">Москва</button>
+            </div>
+            <div class="contacts__content tabs__content" data-tabs="content">
+              <div class="contacts__wrapper tabs__element" data-tabs="element">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <svg width="32" height="32" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <a class="contacts__link" href="tel:+78126027760">8 (812) 602-77-60</a>
+                  </li>
+                  <li class="contacts__item">
+                    <svg width="32" height="32" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#icon-email"></use>
+                    </svg>
+                    <a class="contacts__link" href="mailto:info@pplk.ru">info@pplk.ru</a>
+                  </li>
+                  <li class="contacts__item">
+                    <svg width="32" height="32" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p>ул.&nbsp;Заозёрная, д.&nbsp;8 к.&nbsp;2, офис 202(7 мин. пешком от&nbsp;метро Фрунзенская)</p>
+                  </li>
+                </ul>
+                <picture>
+                  <source media="(max-width: 991px)" srcset="img/map.webp">
+                  <img src="img/map.webp" width="360" height="223" alt="Карта.">
+                </picture>
+              </div>
+            </div>
+            <ul class="contacts__messenger messenger">
+              <li>
+                <a class="messenger__link" href="#" aria-label="Переход на Ютуб.">
+                  <svg width="50" height="62" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="messenger__link" href="#" aria-label="Переход в Вконтакте.">
+                  <svg width="42" height="42" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="messenger__link" href="#" aria-label="Переход в Телеграм.">
+                  <svg width="42" height="42" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__info info">
+              <p>©&nbsp;2023 Пестовский Лесокомбинат. Все&nbsp;права защищены.</p>
+              <a class="info__link" href="#">Реквизиты</a>
+              <a class="info__link" href="#">Политика конфиденциальности</a>
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/logo-Alpha.webp">
+                <img src="img/logo-Alpha.webp" width="158" height="25" alt="Логотип Alpha marketing.">
+              </picture>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
