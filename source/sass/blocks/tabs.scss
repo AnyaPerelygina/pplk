@@ -18,11 +18,16 @@
     border: 3px solid $color-nobel;
     border-radius: 5px;
     background-color: $color-transparent;
-
     padding: 0 11px;
+    cursor: pointer;
+
+    @include hover-focus {
+      color: $color-nero;
+      background-color: $color-nobel;
+    }
 
     &.is-active {
-      color: $color-default-black;
+      color: $color-nero;
       background-color: $color-nobel;
     }
   }

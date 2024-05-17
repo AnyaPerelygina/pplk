@@ -1251,6 +1251,16 @@ html {
 body {
   width: 100%;
   height: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
   background-color: #212121;
 }
 
@@ -2241,6 +2251,7 @@ button,
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #111311;
 }
 .hero__text {
   position: absolute;
@@ -2417,9 +2428,20 @@ button,
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
   padding: 0 11px;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .tabs__control:hover:not(.focus-visible) {
+    color: #212121;
+    background-color: #999999;
+  }
+}
+.tabs__control.focus-visible:focus {
+  color: #212121;
+  background-color: #999999;
 }
 .tabs__control.is-active {
-  color: #000000;
+  color: #212121;
   background-color: #999999;
 }
 
@@ -2682,6 +2704,16 @@ button,
 .contacts__button {
   min-width: 150px;
 }
+@media (hover: hover) {
+  .contacts__button:hover:not(.focus-visible) {
+    color: #111311;
+    background-color: #999999;
+  }
+}
+.contacts__button.focus-visible:focus {
+  color: #111311;
+  background-color: #999999;
+}
 .contacts__list {
   margin: 0;
   padding: 6px 22px 117px;
@@ -2716,8 +2748,17 @@ button,
   font-size: 12px;
   line-height: 30px;
 }
+@media (hover: hover) {
+  .contacts__link:hover:not(.focus-visible) {
+    text-decoration: underline;
+  }
+}
+.contacts__link.focus-visible:focus {
+  text-decoration: underline;
+}
 .contacts__wrapper img {
   width: 100%;
+  background-color: #212121;
 }
 
 .messenger {
@@ -2745,6 +2786,30 @@ button,
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
+@media (hover: hover) {
+  .messenger__link--youtube:hover:not(.focus-visible) {
+    fill: #ff0201;
+  }
+}
+.messenger__link--youtube.focus-visible:focus {
+  fill: #ff0201;
+}
+@media (hover: hover) {
+  .messenger__link--vk:hover:not(.focus-visible) {
+    fill: #0077fe;
+  }
+}
+.messenger__link--vk.focus-visible:focus {
+  fill: #0077fe;
+}
+@media (hover: hover) {
+  .messenger__link--vk:hover:not(.focus-visible) {
+    fill: #26a4e5;
+  }
+}
+.messenger__link--vk.focus-visible:focus {
+  fill: #26a4e5;
+}
 
 .info {
   display: -webkit-box;
@@ -2771,6 +2836,14 @@ button,
 }
 .info a {
   text-decoration: underline;
+}
+@media (hover: hover) {
+  .info a:hover:not(.focus-visible) {
+    text-decoration: none;
+  }
+}
+.info a.focus-visible:focus {
+  text-decoration: none;
 }
 .info__link-2 {
   font-size: 12px;

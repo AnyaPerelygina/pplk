@@ -9,6 +9,11 @@
 
   &__button {
     min-width: 150px;
+
+    @include hover-focus {
+      color: $color-black-bean;
+      background-color: $color-nobel;
+    }
   }
 
   &__list {
@@ -39,11 +44,16 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 30px;
+
+    @include hover-focus {
+      text-decoration: underline;
+    }
   }
 
   &__wrapper {
     img {
       width: 100%;
+      background-color: $color-nero;
     }
   }
 }

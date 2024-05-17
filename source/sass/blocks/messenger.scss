@@ -12,4 +12,22 @@
   top: 287px;
   left: 49%;
   transform: translateX(-50%) translateY(-50%);
+
+  &__link--youtube {
+    @include hover-focus {
+      fill: $color-red;
+    }
+  }
+
+  &__link--vk {
+    @include hover-focus {
+      fill: $color-dodge-blue;
+    }
+  }
+
+  &__link--vk {
+    @include hover-focus {
+      fill: $color-summer-sky;
+    }
+  }
 }
