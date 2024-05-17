@@ -9,13 +9,19 @@
 
   position: fixed;
   top: 0;
-  left: 0;
+  left: -270px;
   z-index: 1;
 
   visibility: hidden;
+  transition: left 0.3s ease-in-out;
 
   &.is-opened {
     visibility: visible;
+    left: 0;
+  }
+
+  &.is-closing {
+    left: -270px;
   }
 
   &__list {

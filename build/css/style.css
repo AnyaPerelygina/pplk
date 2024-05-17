@@ -2145,14 +2145,28 @@ button,
 
 .toggle {
   width: 30px;
-  padding: 4px 0 0;
+  padding: 0 0 0 5px;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .toggle.is-opened {
   padding: 0;
+  -webkit-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+          transform: scaleY(-1);
 }
 
-.toggle .toggle__closed {
+.toggle__closed {
   display: none;
+}
+
+.toggle__opened {
+  display: block;
 }
 
 .toggle.is-opened .toggle__opened {
@@ -2180,12 +2194,18 @@ button,
   background-color: #111311;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -270px;
   z-index: 1;
   visibility: hidden;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 .nav.is-opened {
   visibility: visible;
+  left: 0;
+}
+.nav.is-closing {
+  left: -270px;
 }
 .nav__list {
   list-style: none;
@@ -2786,29 +2806,32 @@ button,
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
+.messenger__link {
+  color: #999999;
+}
 @media (hover: hover) {
   .messenger__link--youtube:hover:not(.focus-visible) {
-    fill: #ff0201;
+    color: #ff0201;
   }
 }
 .messenger__link--youtube.focus-visible:focus {
-  fill: #ff0201;
+  color: #ff0201;
 }
 @media (hover: hover) {
   .messenger__link--vk:hover:not(.focus-visible) {
-    fill: #0077fe;
+    color: #0077fe;
   }
 }
 .messenger__link--vk.focus-visible:focus {
-  fill: #0077fe;
+  color: #0077fe;
 }
 @media (hover: hover) {
-  .messenger__link--vk:hover:not(.focus-visible) {
-    fill: #26a4e5;
+  .messenger__link--telegram:hover:not(.focus-visible) {
+    color: #26a4e5;
   }
 }
-.messenger__link--vk.focus-visible:focus {
-  fill: #26a4e5;
+.messenger__link--telegram.focus-visible:focus {
+  color: #26a4e5;
 }
 
 .info {

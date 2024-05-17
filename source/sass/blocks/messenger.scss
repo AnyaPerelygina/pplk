@@ -13,21 +13,25 @@
   left: 49%;
   transform: translateX(-50%) translateY(-50%);
 
+  &__link {
+    color: $color-nobel;
+  }
+
   &__link--youtube {
     @include hover-focus {
-      fill: $color-red;
+      color: $color-red;
     }
   }
 
   &__link--vk {
     @include hover-focus {
-      fill: $color-dodge-blue;
+      color: $color-dodge-blue;
     }
   }
 
-  &__link--vk {
+  &__link--telegram {
     @include hover-focus {
-      fill: $color-summer-sky;
+      color: $color-summer-sky;
     }
   }
 }

@@ -1,14 +1,21 @@
 .toggle {
   width: 30px;
-  padding: 4px 0 0;
+  padding: 0 0 0 5px;
+  transform: none;
+  transition: transform 0.3s ease-in-out;
 
   &.is-opened {
     padding: 0;
+    transform: scaleY(-1);
   }
 }
 
-.toggle .toggle__closed {
+.toggle__closed {
   display: none;
+}
+
+.toggle__opened {
+  display: block;
 }
 
 .toggle.is-opened .toggle__opened {
