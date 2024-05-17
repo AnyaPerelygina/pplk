@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Строительство Каркасных Домов под ключ в СПб и МСК. Построить деревянный Дом из Бруса. Проекты и цены каркасных домов. Пестовский лесокомбинат.">
     <title>Строительство домов | Строительство бань | Пестовский Лесокомбинат</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicon/favicon.ico">
     <link rel="preload" href="./fonts/gothampro-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/gothampro-500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/gothampro-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -69,233 +69,401 @@
           <div class="container">
             <div class="hero__img">
               <picture>
-                <source media="(min-width: 320px)" srcset="img/hero-background.webp">
-                <img src="img/hero-background.webp" width="1440" height="960" alt="Фоновое изображение сайта.">
+                <source media="(min-width: 992px)" srcset="img/hero/hero-background.webp">
+                <source media="(max-width: 991px)" srcset="img/hero/hero-background-mobile.webp">
+                <img src="img/hero/hero-background-mobile.webp" width="360" height="500" alt="Фоновое изображение сайта.">
               </picture>
             </div>
             <div class="hero__text">
-              <h1>Пестовский Лесокомбинат</h1>
+              <h1>«Пестовский Лесокомбинат»</h1>
               <p>Cтань частью нашей команды!</p>
               <button class="btn hero__button" type="button">Отправить анкету</button>
             </div>
           </div>
         </section>
         <section class="about">
-          <h2 class="about__title title">O компании</h2>
-          <ul class="about__list">
-            <li class="about__item">
-              <span>2</span>
-              <p>Города присутствия: Санкт-Петербург и&nbsp;Москва</p>
-            </li>
-            <li class="about__item">
-              <span>>30</span>
-              <p>Лет среди лидеров рынка</p>
-            </li>
-            <li class="about__item">
-              <span>100</span>
-              <p>Домов и&nbsp;бань сдаём ежегодно</p>
-            </li>
-          </ul>
+          <div class="container">
+            <h2 class="about__title title">O компании</h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <span>2</span>
+                <p>Города присутствия: Санкт-Петербург и&nbsp;Москва</p>
+              </li>
+              <li class="about__item">
+                <span>>30</span>
+                <p>Лет среди лидеров рынка</p>
+              </li>
+              <li class="about__item">
+                <span>100</span>
+                <p>Домов и&nbsp;бань сдаём ежегодно</p>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="vacancies">
-          <h2 class="vacancies__title title">Выбери подразделение:</h2>
-          <div class="vacancies__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
-            <div class="vacancies__nav tabs__controls" data-tabs="controls">
-              <button class="vacancies__button tabs__control is-active" data-tabs="control">Строительный отдел</button>
-              <button class="vacancies__button tabs__control" data-tabs="control">Офис</button>
-              <button class="vacancies__button tabs__control" data-tabs="control">Финансовый отдел</button>
-              <button class="vacancies__button tabs__control" data-tabs="control">Отдел продаж</button>
-              <button class="vacancies__button tabs__control" data-tabs="control">Внештатный сотрудник</button>
-            </div>
-            <div class="vacancies__content tabs__content" data-tabs="content">
-              <ul class="vacancies__list tabs__element" data-tabs="element" data-accordion="parent">
-                <li lass="vacancies__item" data-accordion="element">
-                  <div class="vacancies__content" data-accordion="button">
-                    <div class="vacancies__vacancy vacancy">
-                      <div class="vacancy__title"></div>
-                        <svg width="15" height="15" aria-hidden="true" focusable="false">
-                          <use href="img/sprite.svg#user"></use>
-                        </svg>
-                        <h3>Прораб</h3>
-                      <div class="vacancy__salary"></div>
-                        <svg width="13" height="14" aria-hidden="true" focusable="false">
-                          <use href="img/sprite.svg#ruble"></use>
-                        </svg>
-                        <span>от 00 000 руб</span>
-                      <button class="vacancies__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
+          <div class="container">
+            <h2 class="vacancies__title title">Выбери подразделение:</h2>
+            <div class="vacancies__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+              <div class="vacancies__nav tabs__controls" data-tabs="controls">
+                <button class="vacancies__button tabs__control is-active" data-tabs="control">Строительный отдел</button>
+                <button class="vacancies__button tabs__control" data-tabs="control">Офис</button>
+                <button class="vacancies__button tabs__control" data-tabs="control">Финансовый отдел</button>
+                <button class="vacancies__button tabs__control" data-tabs="control">Отдел продаж</button>
+                <button class="vacancies__button tabs__control" data-tabs="control">Внештатный сотрудник</button>
+              </div>
+              <div class="vacancies__content tabs__content" data-tabs="content">
+                <ul class="vacancies__list tabs__element" data-tabs="element" data-accordion="parent">
+                  <li lass="vacancies__item" data-accordion="element">
+                    <div class="vacancies__content" data-accordion="button">
+                      <div class="vacancies__vacancy vacancy">
+                        <div class="vacancy__title">
+                          <svg width="15" height="15" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#user"></use>
+                          </svg>
+                          <h3>Прораб</h3>
+                        </div>
+                        <div class="vacancy__salary">
+                          <svg width="13" height="14" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#ruble"></use>
+                          </svg>
+                          <span>от 00 000 руб</span>
+                        </div>
+                        <button class="vacancy__button" type="button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                          <svg width="15" height="16" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="vacancies__details" data-accordion="content">
+                        <h4>Задачи:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Наши ожидания:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Мы предлагаем:</h4>
+                        <ul>
+                          <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
+                          <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
+                          <li>ежеквартальную премию по&nbsp;итогам работы;</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="vacancies__details" data-accordion="content">
-                      <h4>Задачи:</h4>
-                      <ul>
-                        <li>описание</li>
-                        <li>описание</li>
-                        <li>описание</li>
-                      </ul>
-                      <h4>Наши ожидания:</h4>
-                      <ul>
-                        <li>описание</li>
-                        <li>описание</li>
-                        <li>описание</li>
-                      </ul>
-                      <h4>Мы предлагаем:</h4>
-                      <ul>
-                        <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
-                        <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
-                        <li>ежеквартальную премию по&nbsp;итогам работы;</li>
-                      </ul>
+                  </li>
+                  <li lass="vacancies__item" data-accordion="element">
+                    <div class="vacancies__content" data-accordion="button">
+                      <div class="vacancies__vacancy vacancy">
+                        <div class="vacancy__title">
+                          <svg width="15" height="15" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#user"></use>
+                          </svg>
+                          <h3>Специалист службы снабжения</h3>
+                        </div>
+                        <div class="vacancy__salary">
+                          <svg width="13" height="14" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#ruble"></use>
+                          </svg>
+                          <span>от 00 000 руб</span>
+                        </div>
+                        <button class="vacancy__button" type="button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                          <svg width="15" height="16" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="vacancies__details" data-accordion="content">
+                        <h4>Задачи:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Наши ожидания:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Мы предлагаем:</h4>
+                        <ul>
+                          <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
+                          <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
+                          <li>ежеквартальную премию по&nbsp;итогам работы;</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                  <li lass="vacancies__item" data-accordion="element">
+                    <div class="vacancies__content" data-accordion="button">
+                      <div class="vacancies__vacancy vacancy">
+                        <div class="vacancy__title">
+                          <svg width="15" height="15" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#user"></use>
+                          </svg>
+                          <h3>Логист</h3>
+                        </div>
+                        <div class="vacancy__salary">
+                          <svg width="13" height="14" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#ruble"></use>
+                          </svg>
+                          <span>Обсуждается на&nbsp;собеседовании</span>
+                        </div>
+                        <button class="vacancy__button" type="button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                          <svg width="15" height="16" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="vacancies__details" data-accordion="content">
+                        <h4>Задачи:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Наши ожидания:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Мы предлагаем:</h4>
+                        <ul>
+                          <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
+                          <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
+                          <li>ежеквартальную премию по&nbsp;итогам работы;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li lass="vacancies__item" data-accordion="element">
+                    <div class="vacancies__content" data-accordion="button">
+                      <div class="vacancies__vacancy vacancy">
+                        <div class="vacancy__title">
+                          <svg width="15" height="15" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#user"></use>
+                          </svg>
+                          <h3>Проектировщик</h3>
+                        </div>
+                        <div class="vacancy__salary">
+                          <svg width="13" height="14" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#ruble"></use>
+                          </svg>
+                          <span>от 00 000 руб</span>
+                        </div>
+                        <button class="vacancy__button" type="button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                          <svg width="15" height="16" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="vacancies__details" data-accordion="content">
+                        <h4>Задачи:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Наши ожидания:</h4>
+                        <ul>
+                          <li>описание</li>
+                          <li>описание</li>
+                          <li>описание</li>
+                        </ul>
+                        <h4>Мы предлагаем:</h4>
+                        <ul>
+                          <li>график 5/2 с&nbsp;гибким началом рабочего дня;</li>
+                          <li>оформление по&nbsp;ТК РФ с&nbsp;первого рабочего дня, полностью белую заработную плату;</li>
+                          <li>ежеквартальную премию по&nbsp;итогам работы;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <button class="btn" type="button">Откликнуться на&nbsp;вакансию</button>
           </div>
-          <button class="btn hero__button" type="button">Отправить анкету</button>
         </section>
         <section class="advantages">
-          <h2 class="advantages__title title">Преимущества компании</h2>
-          <ul class="advantages__list" data-accordion="parent">
-            <li lass="advantages__item" data-accordion="element">
-              <div class="advantages__content" data-accordion="button">
-                <h3 class="advantages__subTitle">Качество продукта</h3>
-                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
-              </div>
-              <div class="advantages__details" data-accordion="content">
-                <p>Мы&nbsp;гордимся результатами своей работы! Мы&nbsp;убеждены, что&nbsp;именно качество&nbsp;— это&nbsp;самое главное, это&nbsp;то, что&nbsp;даёт Нам уверенность в&nbsp;завтрашнем дне.</p>
-              </div>
-            </li>
-            <li lass="advantages__item" data-accordion="element">
-              <div class="advantages__content" data-accordion="button">
-                <h3 class="advantages__subTitle">Популярность бренда в&nbsp;сети</h3>
-                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
-              </div>
-              <div class="advantages__details" data-accordion="content">
-                <p>Мы&nbsp;занимаем высокие позиции в&nbsp;поисковой выдаче и&nbsp;имеем многочисленные отзывы, привлекающие новых заказчиков независимо от&nbsp;времени года.</p>
-              </div>
-            </li>
-            <li lass="advantages__item" data-accordion="element">
-              <div class="advantages__content" data-accordion="button">
-                <h3 class="advantages__subTitle">Передовое рабочее место</h3>
-                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
-              </div>
-              <div class="advantages__details" data-accordion="content">
-                <p>Комфортный офис в&nbsp;центре г.&nbsp;Санкт-Петербург, оборудованный передовыми технологиями. Твой&nbsp;рабочий компьютер может быть даже&nbsp;в&nbsp;твоём смартфоне!</p>
-              </div>
-            </li>
-            <li lass="advantages__item" data-accordion="element">
-              <div class="advantages__content" data-accordion="button">
-                <h3 class="advantages__subTitle">Свои&nbsp;автоматизированные системы обучения</h3>
-                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
-              </div>
-              <div class="advantages__details" data-accordion="content">
-                <p>Создали и&nbsp;постоянно улучшаем собственные автоматизированные системы обучения специалистов и&nbsp;повышения их&nbsp;квалификации внутри компании.</p>
-              </div>
-            </li>
-            <li lass="advantages__item" data-accordion="element">
-              <div class="advantages__content" data-accordion="button">
-                <h3 class="advantages__subTitle">Сотрудничество с&nbsp;ведущими Компаниями рынка</h3>
-                <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ."></button>
-              </div>
-              <div class="advantages__details" data-accordion="content">
-                <p>Сотрудничаем с&nbsp;ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна Петербурга», «КраскиДоски», «Technonicol» и&nbsp;другими.</p>
-              </div>
-            </li>
-          </ul>
+          <div class="container">
+            <h2 class="advantages__title title">Преимущества компании</h2>
+            <ul class="advantages__list" data-accordion="parent">
+              <li lass="advantages__item" data-accordion="element">
+                <div class="advantages__content" data-accordion="button">
+                  <h3 class="advantages__subTitle">Качество продукта</h3>
+                  <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                    <svg width="15" height="16" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="advantages__details" data-accordion="content">
+                  <p>Мы&nbsp;гордимся результатами своей работы! Мы&nbsp;убеждены, что&nbsp;именно качество&nbsp;— это&nbsp;самое главное, это&nbsp;то, что&nbsp;даёт Нам уверенность в&nbsp;завтрашнем дне.</p>
+                </div>
+              </li>
+              <li lass="advantages__item" data-accordion="element">
+                <div class="advantages__content" data-accordion="button">
+                  <h3 class="advantages__subTitle">Популярность бренда в&nbsp;сети</h3>
+                  <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                    <svg width="15" height="16" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="advantages__details" data-accordion="content">
+                  <p>Мы&nbsp;занимаем высокие позиции в&nbsp;поисковой выдаче и&nbsp;имеем многочисленные отзывы, привлекающие новых заказчиков независимо от&nbsp;времени года.</p>
+                </div>
+              </li>
+              <li lass="advantages__item" data-accordion="element">
+                <div class="advantages__content" data-accordion="button">
+                  <h3 class="advantages__subTitle">Передовое рабочее место</h3>
+                  <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                    <svg width="15" height="16" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="advantages__details" data-accordion="content">
+                  <p>Комфортный офис в&nbsp;центре г.&nbsp;Санкт-Петербург, оборудованный передовыми технологиями. Твой&nbsp;рабочий компьютер может быть даже&nbsp;в&nbsp;твоём смартфоне!</p>
+                </div>
+              </li>
+              <li lass="advantages__item" data-accordion="element">
+                <div class="advantages__content" data-accordion="button">
+                  <h3 class="advantages__subTitle">Свои&nbsp;автоматизированные системы обучения</h3>
+                  <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                    <svg width="15" height="16" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="advantages__details" data-accordion="content">
+                  <p>Создали и&nbsp;постоянно улучшаем собственные автоматизированные системы обучения специалистов и&nbsp;повышения их&nbsp;квалификации внутри компании.</p>
+                </div>
+              </li>
+              <li lass="advantages__item" data-accordion="element">
+                <div class="advantages__content" data-accordion="button">
+                  <h3 class="advantages__subTitle">Сотрудничество с&nbsp;ведущими Компаниями рынка</h3>
+                  <button class="advantages__button" aria-label="Нажмите, чтобы раскрыть ответ.">
+                    <svg width="15" height="16" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="advantages__details" data-accordion="content">
+                  <p>Сотрудничаем с&nbsp;ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна Петербурга», «КраскиДоски», «Technonicol» и&nbsp;другими.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="products">
-          <h2 class="products__title">Продукты компании</h2>
-          <div class="products__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
-            <div class="products__nav tabs__controls" data-tabs="controls">
-              <button class="products__button tabs__control is-active" data-tabs="control">Бани</button>
-              <button class="products__button tabs__control" data-tabs="control">Дома</button>
-            </div>
-            <div class="products__content tabs__content" data-tabs="content">
-              <div class="products__list tabs__element swiper" data-tabs="element">
-                <div class="products__wrapper swiper-wrapper">
-                  <div class="products__slide swiper-slide"></div>
-                  <div class="products__slide swiper-slide"></div>
-                  <div class="products__slide swiper-slide"></div>
-                </div>
+          <div class="container">
+            <h2 class="products__title title">Продукты компании</h2>
+            <div class="products__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+              <div class="products__nav tabs__controls" data-tabs="controls">
+                <button class="products__button tabs__control is-active" data-tabs="control">Бани</button>
+                <button class="products__button tabs__control" data-tabs="control">Дома</button>
               </div>
-              <div class="products__list tabs__element swiper" data-tabs="element">
-                <div class="products__wrapper swiper-wrapper">
-                  <div class="products__slide swiper-slide"></div>
-                  <div class="products__slide swiper-slide"></div>
-                  <div class="products__slide swiper-slide"></div>
+              <div class="products__content tabs__content" data-tabs="content">
+                <div class="products__list tabs__element swiper" data-tabs="element">
+                  <div class="products__wrapper swiper-wrapper">
+                    <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
+                  </div>
+                </div>
+                <div class="products__list tabs__element swiper" data-tabs="element">
+                  <div class="products__wrapper swiper-wrapper">
+                    <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="employees">
-          <h2 class="employees__title title">Карьерный рост</h2>
-          <p>Наша&nbsp;Компания является ярким примером, где&nbsp;достойные люди смело и&nbsp;заслуженно поднимаются по&nbsp;карьерной лестнице.</p>
-          <p>Мы&nbsp;ценим стремление к&nbsp;развитию и&nbsp;предоставляем все&nbsp;необходимые для&nbsp;этого условия.</p>
-          <div class="employees__employees swiper">
-            <div class="employees__slide swiper-slide">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/employees/Oleg.webp">
-                <img src="img/employees/Oleg.webp" width="238" height="240" alt="Изображение сотрудника компании.">
-              </picture>
-              <div class="employees__text">
-                <h3>Олег Воробьёв</h3>
-                <span>Прораб</span>
-                <ul class="employees__list">
-                  <li>В&nbsp;Компании с&nbsp;2018&nbsp;года. Начал с&nbsp;позиции плотника в&nbsp;строительной бригаде.</li>
-                  <li>В&nbsp;течение года работы Олег стал бригадиром и&nbsp;был приглашён в&nbsp;офис Компании на&nbsp;должность штатного Производителя строительных работ.</li>
-                  <li>На&nbsp;данный момент в&nbsp;Его&nbsp;подчинении находятся 9&nbsp;строительных бригад. Олег вносит весомый вклад в&nbsp;итоговый результат Компании, а&nbsp;это реализация 100 объектов в&nbsp;год!</li>
-                </ul>
+          <div class="container">
+            <h2 class="employees__title title">Карьерный рост</h2>
+            <p>Наша&nbsp;Компания является ярким примером, где&nbsp;достойные люди смело и&nbsp;заслуженно поднимаются по&nbsp;карьерной лестнице.</p>
+            <p>Мы&nbsp;ценим стремление к&nbsp;развитию и&nbsp;предоставляем все&nbsp;необходимые для&nbsp;этого условия.</p>
+            <div class="employees__employees swiper">
+              <div class="employees__slide swiper-slide">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/employees/Oleg.webp">
+                  <img src="img/employees/Oleg.webp" width="238" height="240" alt="Изображение сотрудника компании.">
+                </picture>
+                <div class="employees__text">
+                  <h3>Олег Воробьёв</h3>
+                  <span>Прораб</span>
+                  <ul class="employees__list">
+                    <li>В&nbsp;Компании с&nbsp;2018&nbsp;года. Начал с&nbsp;позиции плотника в&nbsp;строительной бригаде.</li>
+                    <li>В&nbsp;течение года работы Олег стал бригадиром и&nbsp;был приглашён в&nbsp;офис Компании на&nbsp;должность штатного Производителя строительных работ.</li>
+                    <li>На&nbsp;данный момент в&nbsp;Его&nbsp;подчинении находятся 9&nbsp;строительных бригад. Олег вносит весомый вклад в&nbsp;итоговый результат Компании, а&nbsp;это реализация 100 объектов в&nbsp;год!</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="employees__slide swiper-slide">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/employees/Maria.webp">
-                <img src="img/employees/Maria.webp" width="216" height="240" alt="Изображение сотрудника компании.">
-              </picture>
-              <div class="employees__text">
-                <h3>Мария Обухова</h3>
-                <span>Руководитель финансовой службы</span>
-                <ul class="employees__list">
-                  <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
-                  <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
-                  <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
-                </ul>
+              <!-- <div class="employees__slide swiper-slide">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/employees/Maria.webp">
+                  <img src="img/employees/Maria.webp" width="216" height="240" alt="Изображение сотрудника компании.">
+                </picture>
+                <div class="employees__text">
+                  <h3>Мария Обухова</h3>
+                  <span>Руководитель финансовой службы</span>
+                  <ul class="employees__list">
+                    <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
+                    <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
+                    <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="employees__slide swiper-slide">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/employees/Danil.webp">
-                <img src="img/employees/Danil.webp" width="204" height="240" alt="Изображение сотрудника компании.">
-              </picture>
-              <div class="employees__text">
-                <h3>Даниил Басенков</h3>
-                <span>Менеджер по снабжению</span>
-                <ul class="employees__list">
-                  <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
-                  <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
-                  <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
-                </ul>
-              </div>
+              <div class="employees__slide swiper-slide">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/employees/Danil.webp">
+                  <img src="img/employees/Danil.webp" width="204" height="240" alt="Изображение сотрудника компании.">
+                </picture>
+                <div class="employees__text">
+                  <h3>Даниил Басенков</h3>
+                  <span>Менеджер по снабжению</span>
+                  <ul class="employees__list">
+                    <li>В декабре 2018 года заступил на&nbsp;должность Менеджера отдела продаж.</li>
+                    <li>После&nbsp;9 месяцев стабильных результатов, зарекомендовав себя как&nbsp;надёжный сотрудник, получил ответственную должность Логиста.</li>
+                    <li>Через&nbsp;год Даниил занял должность Специалиста службы снабжения, взяв на&nbsp;себя помимо закупа материала ещё&nbsp;и&nbsp;крайне важную роль Сметчика.</li>
+                  </ul>
+                </div>
+              </div> -->
             </div>
           </div>
         </section>
         <section class="promo">
-          <picture>
-            <source media="(min-width: 320px)" srcset="img/people.webp">
-            <img src="img/people.webp" width="427" height="386" alt="Изображение нарисованных людей.">
-          </picture>
-          <div class="promo__text">
-            <p>Наши успехи&nbsp;—&nbsp;это&nbsp;заслуга замечательных людей, работающих в&nbsp;нашей Команде.</p>
-            <p>У&nbsp;Нас&nbsp;всегда есть вакансии для&nbsp;сильных кандидатов</p>
-          </div>
-          <div class="promo__text">
-            <p>Если чувствуешь в&nbsp;Себе потенциал и&nbsp;здоровые амбиции&nbsp;—&nbsp;ждём рядом с&nbsp;Нами!</p>
-            <button class="btn promo__button" type="button">Присоединиться к&nbsp;команде</button>
+          <div class="container">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/people.webp">
+              <img src="img/people.webp" width="427" height="386" alt="Изображение нарисованных людей.">
+            </picture>
+            <div class="promo__text-1">
+              <p>Наши успехи&nbsp;—&nbsp;это&nbsp;заслуга замечательных людей, работающих в&nbsp;нашей Команде.</p>
+              <p>У&nbsp;Нас&nbsp;всегда есть вакансии для&nbsp;сильных кандидатов</p>
+            </div>
+            <div class="promo__text-2">
+              <p>Если чувствуешь в&nbsp;Себе потенциал и&nbsp;здоровые амбиции&nbsp;—&nbsp;ждём рядом с&nbsp;Нами!</p>
+              <button class="btn promo__button" type="button">Присоединиться к&nbsp;команде</button>
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="container">
-          <h2 class="footer__title">Контакты</h2>
+          <h2 class="footer__title title">Контакты</h2>
           <div class="contacts contacts__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
             <div class="contacts__nav tabs__controls" data-tabs="controls">
               <button class="contacts__button tabs__control is-active" data-tabs="control">Санкт-Петербург</button>
@@ -320,7 +488,7 @@
                     <svg width="32" height="32" aria-hidden="true" focusable="false">
                       <use href="img/sprite.svg#icon-pin"></use>
                     </svg>
-                    <p>ул.&nbsp;Заозёрная, д.&nbsp;8 к.&nbsp;2, офис 202(7 мин. пешком от&nbsp;метро Фрунзенская)</p>
+                    <p>ул.&nbsp;Заозёрная, д.&nbsp;8 к.&nbsp;2, офис 202<br>(7 мин. пешком от&nbsp;метро Фрунзенская)</p>
                   </li>
                 </ul>
                 <picture>
@@ -354,8 +522,8 @@
             </ul>
             <div class="footer__info info">
               <p>©&nbsp;2023 Пестовский Лесокомбинат. Все&nbsp;права защищены.</p>
-              <a class="info__link" href="#">Реквизиты</a>
-              <a class="info__link" href="#">Политика конфиденциальности</a>
+              <a class="info__link-1" href="#">Реквизиты</a>
+              <a class="info__link-2" href="#">Политика конфиденциальности</a>
               <picture>
                 <source media="(min-width: 320px)" srcset="img/logo-Alpha.webp">
                 <img src="img/logo-Alpha.webp" width="158" height="25" alt="Логотип Alpha marketing.">

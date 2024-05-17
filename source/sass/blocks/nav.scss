@@ -42,5 +42,9 @@
     line-height: 1.3;
     font-weight: 600;
     text-transform: uppercase;
+
+    @include hover-focus {
+      color: $color-forest-green;
+    }
   }
 }

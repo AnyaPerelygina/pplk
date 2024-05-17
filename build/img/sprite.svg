@@ -52,6 +52,9 @@
 <circle cx="16" cy="16" r="15.75" stroke="#21A038" stroke-width="0.5"/>
 </g>
 
+</g></symbol><symbol id="plus" viewBox="0 0 15 16"><g fill="none">
+<line y1="8" x2="15" y2="8" stroke="white" stroke-width="3"/>
+<line x1="7.5" y1="15.5" x2="7.5" y2="0.5" stroke="white" stroke-width="3"/>
 </g></symbol><symbol id="projects" viewBox="0 0 32 32"><g style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="&#x41c;&#x43e;&#x43d;&#x442;&#x430;&#x436;&#x43d;&#x430;&#x44f;-&#x43e;&#x431;&#x43b;&#x430;&#x441;&#x442;&#x44c;1" serif:id="&#x41c;&#x43e;&#x43d;&#x442;&#x430;&#x436;&#x43d;&#x430;&#x44f; &#x43e;&#x431;&#x43b;&#x430;&#x441;&#x442;&#x44c;1" transform="matrix(0.061742,0,0,0.125843,-10.1566,-17.7618)">
         <rect x="164.5" y="141.143" width="518.286" height="254.286" style="fill:none;"/>

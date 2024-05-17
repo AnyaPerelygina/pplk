@@ -1,0 +1,20 @@
+.products {
+  .container {
+    padding: 46px 0;
+  }
+
+  .title {
+    margin: 0 0 34px;
+  }
+
+  &__nav {
+    padding: 0 70px;
+    flex-wrap: nowrap;
+    gap: 3px;
+  }
+
+  &__button {
+    color: $color-nobel;
+    padding: 0 33px;
+  }
+}

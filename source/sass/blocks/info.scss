@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 42px 20px 32px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  p {
+    margin: 0 0 31px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &__link-2 {
+    font-size: 12px;
+    margin: 0 0 14px;
+  }
+}

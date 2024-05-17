@@ -1,0 +1,15 @@
+.messenger {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+
+  position: absolute;
+  top: 287px;
+  left: 49%;
+  transform: translateX(-50%) translateY(-50%);
+}

@@ -1,0 +1,83 @@
+.vacancy {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  border: 3px solid $color-nobel;
+  border-radius: 30px;
+  padding: 28px 27px 27px;
+  column-gap: 5px;
+  row-gap: 19px;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    grid-area: 1 / 1;
+
+    svg {
+      min-width: 25px;
+      height: 25px;
+      padding: 5px;
+      background-color: $color-default-white;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+
+  &__salary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    grid-area: 2 / 1;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    svg {
+      min-width: 25px;
+      height: 25px;
+      padding: 5px;
+      background-color: $color-default-white;
+      border-radius: 50%;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    span {
+      color: $color-forest-green;
+    }
+  }
+
+    &__button {
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background-color: $color-forest-green;
+    border-radius: 50%;
+
+    grid-row: span 2;
+    display: flex;
+    justify-self: end;
+    align-self: center;
+
+    cursor: pointer;
+
+    svg {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.tabs {
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 35px;
+  }
+
+  &__control {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-default-white;
+
+    border: 3px solid $color-nobel;
+    border-radius: 5px;
+    background-color: $color-transparent;
+
+    padding: 0 11px;
+
+    &.is-active {
+      color: $color-default-black;
+      background-color: $color-nobel;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.vacancies {
+  .container {
+    padding: 26px 20px 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: start;
+    margin: 0 0 33px;
+  }
+
+  &__list {
+    margin: 0 0 35px;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding: 10px 26px;
+  }
+
+  &__details {
+    display: none;
+  }
+}

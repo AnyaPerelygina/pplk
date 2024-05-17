@@ -1,0 +1,52 @@
+.promo {
+  position: relative;
+
+  .container {
+    padding: 46px 20px 31px;
+  }
+
+  img {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__text-1 {
+    margin: 0 0 135px;
+
+    p {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: start;
+      text-transform: uppercase;
+      letter-spacing: -0.7px;
+      margin: 0 0 15px;
+    }
+  }
+
+  &__text-2 {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 27px 20px 27px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid $color-japanese-laurel;
+    border-radius: 23px;
+    box-shadow: 0 0 10px 0 $color-fruit-salad;
+
+    p {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: start;
+      letter-spacing: -0.5px;
+      margin: 0 0 18px;
+    }
+  }
+
+  &__button {
+    padding: 10px 27px;
+  }
+}
