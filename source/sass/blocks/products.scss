@@ -9,14 +9,21 @@
 
   &__nav {
     padding: 0 70px;
+    margin: 0 auto 35px;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 3px;
+    max-width: 220px;
   }
 
   &__tab {
     color: $color-nobel;
     padding: 0 33px;
+  }
+
+  &__tabs {
+    max-width: 545px;
+    margin: 0 auto;
   }
 
   &__wrapper {

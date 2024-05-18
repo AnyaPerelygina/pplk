@@ -30,6 +30,6 @@
 
 [data-accordion="content"] {
   max-height: 0;
-  transition: max-height 0.3s;
+  transition: max-height 0.3s ease;
   overflow: hidden;
 }
