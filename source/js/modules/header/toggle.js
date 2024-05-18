@@ -51,7 +51,7 @@ const addToggleMenu = () => {
       root.classList.remove(OPENED_CLASS);
       toggle.classList.remove(OPENED_CLASS);
       nav.classList.remove(OPENED_CLASS);
-    }, 300);
+    }, 200);
 
     document.removeEventListener('keydown', onDocumentKeydown);
     nav.removeEventListener('click', onLinkClick);

@@ -2149,10 +2149,10 @@ button,
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .toggle.is-opened {
   padding: 0;
@@ -2197,8 +2197,8 @@ button,
   left: -270px;
   z-index: 1;
   visibility: hidden;
-  -webkit-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out;
+  -webkit-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
 }
 .nav.is-opened {
   visibility: visible;
@@ -2254,19 +2254,18 @@ button,
 .hero {
   padding: 40px 0;
   min-height: 540px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 .hero .container {
   padding: 0;
 }
 .hero__img {
-  position: absolute;
-  top: 40px;
-  left: 0;
   width: 100%;
 }
 .hero__img img {
-  max-height: 500px;
   height: auto;
   width: 100%;
   -o-object-fit: cover;
@@ -2275,7 +2274,7 @@ button,
 }
 .hero__text {
   position: absolute;
-  top: 74.5%;
+  bottom: -7px;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
@@ -2316,7 +2315,7 @@ button,
 }
 
 .about .container {
-  padding: 47px 20px;
+  padding: 7px 20px 47px;
 }
 .about .title {
   margin: 0 0 33px;
@@ -2636,6 +2635,9 @@ button,
   padding: 0 70px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 3px;
 }
 .products__button {
@@ -2652,15 +2654,29 @@ button,
 }
 .promo .container {
   padding: 46px 20px 31px;
+  max-width: 600px;
 }
 .promo img {
   position: absolute;
   top: 88px;
   left: 0;
+  right: 0;
+  margin: auto;
   z-index: -1;
+  max-width: 360px;
 }
-.promo__text-1 {
-  margin: 0 0 135px;
+.promo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 488px;
 }
 .promo__text-1 p {
   font-weight: 700;

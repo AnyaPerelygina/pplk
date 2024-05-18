@@ -1,6 +1,7 @@
 .hero {
   padding: 40px 0;
   min-height: 540px;
+  height: fit-content;
   position: relative;
 
   .container {
@@ -8,13 +9,9 @@
   }
 
   &__img {
-    position: absolute;
-    top: 40px;
-    left: 0;
     width: 100%;
 
     img {
-      max-height: 500px;
       height: auto;
       width: 100%;
       object-fit: cover;
@@ -24,7 +21,7 @@
 
   &__text {
     position: absolute;
-    top: 74.5%;
+    bottom: -7px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
