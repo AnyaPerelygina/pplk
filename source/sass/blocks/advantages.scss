@@ -22,8 +22,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px 12px;
-
     border-bottom: 3px solid $color-nobel;
+    cursor: pointer;
   }
 
   &__subTitle {
@@ -53,6 +53,13 @@
   }
 
   &__details {
-    display: none;
+    grid-column: span 2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
+    p {
+      margin: 16px 0 0;
+    }
   }
 }

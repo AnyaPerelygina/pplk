@@ -1,0 +1,35 @@
+[data-accordion="element"] {
+  .vacancies__details {
+    display: none;
+  }
+}
+
+[data-accordion="element"].is-active {
+  .vacancies__details {
+    display: flex;
+    max-height: fit-content;
+  }
+
+  .vacancy__button {
+    transform: rotate(45deg);
+  }
+
+  .advantages__details {
+    display: flex;
+    max-height: fit-content;
+  }
+
+  .advantages__button {
+    transform: rotate(45deg);
+  }
+}
+
+[data-accordion="parent"].no-transition [data-accordion="content"] {
+  transition: none;
+}
+
+[data-accordion="content"] {
+  max-height: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}

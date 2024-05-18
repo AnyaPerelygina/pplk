@@ -1,4 +1,6 @@
 .tabs {
+  max-width: 100%;
+
   &__controls {
     display: flex;
     flex-direction: row;
@@ -31,4 +33,23 @@
       background-color: $color-nobel;
     }
   }
+
+  &__element {
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
