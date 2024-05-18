@@ -12,6 +12,7 @@ const initsSliderEmployees = () => {
         prevEl: buttonPrev,
       },
       loop: true,
+      speed: 500,
       breakpoints: {
         320: {
           slidesPerView: 1,
