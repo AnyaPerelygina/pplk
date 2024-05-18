@@ -14,8 +14,83 @@
     gap: 3px;
   }
 
-  &__button {
+  &__tab {
     color: $color-nobel;
     padding: 0 33px;
   }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide-active {
+      width: 165px;
+      height: 182px;
+      background-color: $color-gainsboro;
+      border: 5px solid $color-nobel;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__list {
+    width: 165px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+  }
+
+  &__slide {
+    width: 130px;
+    height: 148px;
+    border-radius: 10px;
+    background-color: $color-gainsboro;
+  }
+
+  &__button {
+    position: absolute;
+    top: 42.5%;
+    z-index: 9;
+    width: 30px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 2px;
+    cursor: pointer;
+  }
+
+  &__button--prev {
+    left: 7px;
+  }
+
+  &__button--next {
+    right: 7px;
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -40px;
+}
+
+.swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  background: $color-stack;
+  opacity: 1;
+  transition: width 0.3s ease;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 42px;
+  height: 15px;
+  background: $color-default-white;
+  border-radius: 25px;
 }

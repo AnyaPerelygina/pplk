@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';
 import {StickyHeader} from './modules/header/sticky-header';
 import {initsSliderEmployees} from './modules/sliders/employees-slider';
+import {initsSliderProducts} from './modules/sliders/products-slider';
 
 // ---------------------------------
 
@@ -12,13 +13,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  initsSliderEmployees();
   iosVhFix();
 
   // Modules
   // ---------------------------------
 
   addToggleMenu();
+  initsSliderEmployees();
+  initsSliderProducts();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -368,24 +368,37 @@
             <h2 class="products__title title">Продукты компании</h2>
             <div class="products__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
               <div class="products__nav tabs__controls" data-tabs="controls">
-                <button class="products__button tabs__control is-active" data-tabs="control">Бани</button>
-                <button class="products__button tabs__control" data-tabs="control">Дома</button>
+                <button class="products__tab tabs__control is-active" data-tabs="control">Бани</button>
+                <button class="products__tab tabs__control" data-tabs="control">Дома</button>
               </div>
               <div class="products__content tabs__content" data-tabs="content">
+                <button class="products__button products__button--prev" type="button" aria-label="Назад.">
+                  <svg width="18" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
                 <div class="products__list tabs__element swiper" data-tabs="element">
                   <div class="products__wrapper swiper-wrapper">
                     <div class="products__slide swiper-slide"></div>
                     <div class="products__slide swiper-slide"></div>
                     <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
+                    <div class="products__slide swiper-slide"></div>
                   </div>
                 </div>
-                <div class="products__list tabs__element swiper" data-tabs="element">
+                <!-- <div class="products__list tabs__element swiper" data-tabs="element">
                   <div class="products__wrapper swiper-wrapper">
                     <div class="products__slide swiper-slide"></div>
                     <div class="products__slide swiper-slide"></div>
                     <div class="products__slide swiper-slide"></div>
                   </div>
-                </div>
+                </div> -->
+                <button class="products__button products__button--next" type="button" aria-label="Назад.">
+                  <svg width="18" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="products__pagination swiper-pagination"></div>
               </div>
             </div>
           </div>

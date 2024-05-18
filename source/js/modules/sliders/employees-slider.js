@@ -13,6 +13,7 @@ const initsSliderEmployees = () => {
       },
       loop: true,
       speed: 500,
+      allowTouchMove: true,
       breakpoints: {
         320: {
           slidesPerView: 1,
