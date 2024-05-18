@@ -2646,6 +2646,87 @@ button,
 .employees {
   background-color: #111311;
 }
+.employees .container {
+  position: relative;
+  padding: 45px 20px 15px;
+}
+.employees .title {
+  margin: 0 0 32px;
+}
+.employees p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  text-align: start;
+  margin: 0 0 17px;
+}
+.employees img {
+  margin: 17px auto 0;
+}
+.employees__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px 0;
+}
+.employees__text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+.employees__text span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+.employees__list {
+  padding: 0 0 0 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+}
+.employees__list li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.employees__button {
+  position: absolute;
+  top: 18.2%;
+  width: 18px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+}
+.employees__button--prev {
+  left: 13px;
+}
+.employees__button--next {
+  right: 13px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 .promo {
   position: relative;

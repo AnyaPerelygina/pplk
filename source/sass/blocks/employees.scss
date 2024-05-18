@@ -1,3 +1,82 @@
 .employees {
   background-color: $color-black-bean;
+
+  .container {
+    position: relative;
+    padding: 45px 20px 15px;
+  }
+
+  .title {
+    margin: 0 0 32px;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    text-align: start;
+    margin: 0 0 17px;
+  }
+
+  img {
+    margin: 17px auto 0;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px 0;
+
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: -0.7px;
+      text-align: center;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    padding: 0 0 0 19px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    li {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 18.2%;
+    width: 18px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__button--prev {
+    left: 13px;
+  }
+
+  &__button--next {
+    right: 13px;
+    transform: rotate(180deg);
+  }
 }
