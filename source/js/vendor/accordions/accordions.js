@@ -1,6 +1,6 @@
 export class Accordions {
   constructor() {
-    this._openHeight = 0;
+    this._openHeight = 'fit-content';
     this._windowWidth = window.innerWidth;
     this._documentClickHandler = this._documentClickHandler.bind(this);
     this._windowResizeHandler = this._windowResizeHandler.bind(this);
