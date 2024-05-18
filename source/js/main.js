@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';
 import {StickyHeader} from './modules/header/sticky-header';
+import {initsSliderEmployees} from './modules/sliders/employees-slider';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
+  initsSliderEmployees();
   iosVhFix();
 
   // Modules
